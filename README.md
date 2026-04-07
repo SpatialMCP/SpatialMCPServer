@@ -71,3 +71,5 @@ Response is a JSON array of objects:
   }
 ]
 ```
+
+You can find sample API server [here](https://github.com/SpatialMCP/server)
