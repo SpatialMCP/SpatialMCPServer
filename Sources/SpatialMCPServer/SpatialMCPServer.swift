@@ -106,8 +106,10 @@ func getNearbyParks(location: String, distance: Int, unit: String) async throws 
   urlRequest.addValue("application/json", forHTTPHeaderField: "Accept")
 
   let (data, _) = try await URLSession.shared.data(from: url)
+
   // Decode JSON
   let parks = try JSONDecoder().decode([Park].self, from: data)
+
   // Convert data to MCP output
   return parks.map { park in
     .text(text: "\(park.details.name) — \(String(format: "%.2f", park.distance)) \(unit)", annotations: nil, _meta: nil)
