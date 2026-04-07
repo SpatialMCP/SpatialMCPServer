@@ -4,6 +4,8 @@
 
 A Swift MCP (Model Context Protocol) server that exposes nearby park data to AI assistants such as Claude Desktop. It acts as a bridge between Claude and a local spatial REST API, enabling real-time park lookups based on GPS coordinates.
 
+Article can be read [here](https://medium.com/@kicsipixel/from-coordinates-to-conversations-an-mcp-server-for-spatial-data-2649707814a6).
+
 ## Requirements
 
 - macOS 14+
